@@ -1,7 +1,7 @@
 const { Telegraf, Markup, InputFile } = require('telegraf');
 const { MongoClient } = require('mongodb');
 
-const mongoUri = "YOUR MONGOURL";
+const mongoUri = "mongodb+srv://razer:razer@cluster0.pw09u3r.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let usersCollection;
@@ -108,7 +108,7 @@ client.connect().then(() => {
     const db = client.db('seq');
     usersCollection = db.collection('users');
 // fll ur bot token correctly//
-    const bot = new Telegraf('UR BOT TOKEN');
+    const bot = new Telegraf('6895581658:AAEl84Bp1jpB8Q0YCbOdEzdWtiEK4ByCxVs');
     const port = process.env.PORT || 8080; // don't change port
 
     bot.start(startMessage);
