@@ -19,11 +19,11 @@ async function startMessage(ctx) {
 
     const welcomeText = `Welcome, ${name}! 🌟 I am a file sequencing bot. Built with ❤️ using JavaScript and the Telegraf library.\n\n`;
     const botDescription = `🤖 What I do:\nI help you sequence and organize your files. Use /ssequence to start the process. Send documents, videos, or audio files, and when you're done, use /esequence to get the sequenced files. Use /cancel to cancel all sequences.\n\n`;
-    const additionalInfo = `🔗 Owner: @ImMitsuoSuwa`;
+    const additionalInfo = `🔗 Owner: @Razer358`;
 
     const messageText = welcomeText + botDescription + additionalInfo;
 
-    await ctx.reply(messageText, Markup.inlineKeyboard([Markup.button.url('Updates!', buttonURL)]));
+    await ctx.reply(messageText, Markup.inlineKeyboard([Markup.button.url('Updates!', 'https://t.me/Prime_Movieshd')]));
 }
 // function for processing ur files //
 async function processFileSequence(ctx, fileType) {
